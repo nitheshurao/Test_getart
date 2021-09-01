@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .header{
+      background-color: rgb(255, 255, 255);
+      padding: 1rem;
+       border-bottom:  solid 0.1rem rgb(202, 198, 198);
+  }
+  .header button{
+      justify-items: center;
+      background:transparent;
+      border: none;
+
+  }
+  .product{
+      /* display: flex; */
+      width: 100%;
+      padding: 2rem;
+  }
+  .label
+  {
+      /* padding-top: 1rem; */
+      /* background-color: seagreen; */
+  }
+  .product h3{
+      padding: 1rem;
+  }
+ .pName{
+padding-bottom: 2rem;
+padding-top: 1rem;
+margin-bottom: 1rem;
+
+border-bottom:  solid 0.1rem rgb(202, 198, 198);
+ }
+ .pName input{
+width: 100%;
+padding: 1rem;
+
+ }
+ .text-editor {
+    /* width: 1086px; */
+    margin: 0 auto;
+  }
+  .ql-editor {
+    min-height: 100px;
+  }
+  .ql-snow.ql-toolbar {
+    display: block;
+    background: rgb(255, 255, 255);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  } 
+  .ql-snow.ql-toolbar:hover{
+    background: rgb(196, 196, 196);
+  }
+  .fileInput{
+      background-color: seagreen;
+      padding: 20px;
+  }
+  .fileInputs {
+      /* background-color: sienna; */
+padding: 1rem;
+height: 1rem;
+  }
+  .fileInput input{
+      padding: 1rem;
+  }
+  .file-upload-wrapper {
+background-color: rgb(175, 231, 102);
+    height: 4rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: height;
+    border-radius: 1rem;
+  }
+
+
+  .file-upload-wrapper input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: - 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+
+  }
+  .file-upload-wrapper h{
+
+padding: 1rem;
+display: flex;
+
+
+
+  }
+
