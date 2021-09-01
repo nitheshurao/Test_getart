@@ -68,7 +68,7 @@ const Panel = () => {
                         <input type="text" placeholder="Enter tag here" />
                     </div>
                     {/* /// */}
-                    <h3>Product Variants</h3>
+                    <h3>SEO Meta Details  </h3>
 
                     <div className="pName1">
 
