@@ -67,6 +67,18 @@ const Panel = () => {
 
                         <input type="text" placeholder="Enter tag here" />
                     </div>
+                    {/* /// */}
+                    <h3>Product Variants</h3>
+
+                    <div className="pName1">
+
+                        <input type="text" placeholder="Enter tag here" />
+                        <div className="pName1">
+                            <textarea className="textarea" placeholder="Write something.." ></textarea>
+
+                        </div>
+                    </div>
+
 
                 </form>
 
