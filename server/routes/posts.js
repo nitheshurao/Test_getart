@@ -4,11 +4,11 @@ import express from 'express';
 import PostMessage from '../models/PostProduct.js'
 
 
-import { createPost } from '../controller/posts.js'
+import { createPost, getPosts } from '../controller/posts.js'
 
 const router = express.Router();
 
-// router.get('/', getPosts);
+router.get('/', getPosts);
 router.post('/', createPost);
 // router.get('/:id', getPost);
 // router.patch('/:id', updatePost);

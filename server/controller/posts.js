@@ -1,16 +1,16 @@
 import express from 'express';
 import mongoose from 'mongoose';
 
-;
+
 
 import PostProduct from '../models/PostProduct.js';
 const router = express.Router();
 
 export const getPosts = async (req, res) => {
     try {
-        const PostProduct = awaitPostProduct.find();
+        const PostProducts = await PostProduct.find();
 
-        res.status(200).json(PostProduct);
+        res.status(200).json(PostProducts);
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
