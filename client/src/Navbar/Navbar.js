@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 
 const Navbar = (props) => {
-    // const [sidecart, setSidecart] = useState(false);
+    const [sidecart, setSidecart] = useState(false);
 
     const showSidebar = () => props.setSidecart(!props.sidecart);
     console.log(props.sidecart)
@@ -22,7 +22,7 @@ const Navbar = (props) => {
 
             </div>
             <Link to="/panel"><h5>Panel</h5></Link>
-            <Link to="/d"><h5>PageDetails</h5></Link>
+            {/* <Link to="/d"><h5>PageDetails</h5></Link> */}
             <Link to="/page"><h5>Page</h5></Link>
             <Link to="/Pages"><h5>Pages</h5></Link>
             <Link to="/c"><h5>Cart</h5></Link>

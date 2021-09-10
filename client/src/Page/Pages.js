@@ -1,34 +1,36 @@
 
+import React from 'react';
 import { Grid, CircularProgress } from '@material-ui/core';
 import { useSelector } from 'react-redux';
+import Page from './Pagee/Page';
+import './Pages.css';
 
 
-import useStyles from './style';
-// import Page from './Pagee/Page';
 
 
 
-import React from 'react'
-import Page from './Pagee/Page'
-import './Pages.css'
-const Pages = () => {
-    const classes = useStyles();
+const Pages = ({ setCurrentId }) => {
     const posts = useSelector((state) => state.posts);
-    return (
-        <div className="product">
-            <Page />
-            <Page />
-            <Page />
-            <Page />
-            <Page />
-            <Page />
-            <Page />
-            <Page />
-            <Page />
-            <Page />
-            <Page />
-        </div>
-    )
-}
 
-export default Pages
+    console.log(posts)
+
+    return (
+        !posts.length ? <CircularProgress /> : (
+            // <Grid container alignItems="stretch" spacing={3} >
+            <div className="product">
+                {
+                    posts.map((post) => (
+                        // <Grid key={post._id} item xs={12} sm={6} md={6}>
+
+                        <Page post={post} setCurrentId={setCurrentId} />
+                        // <h1>posss</h1>
+                        // </Grid>
+                    ))
+                }
+            </div>
+            // </Grid >
+        )
+    );
+};
+
+export default Pages;

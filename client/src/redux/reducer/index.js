@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 
-import Product from './Product';
+import posts from './Post';
 
-export const reducers = combineReducers({ Product });
+
+export const reducers = combineReducers({ posts });

@@ -11,7 +11,7 @@ import VerticalAlignTopIcon from '@material-ui/icons/VerticalAlignTop';
 
 // import { createPost } from './../'
 // ../redux/actions/Product.js
-import { createPost } from "../redux/actions/Product";
+import { createPost } from "../redux1/actions/Product";
 import TextEditor from './TextEditor';
 
 
@@ -124,7 +124,7 @@ const Panel = () => {
                                 editorClassName="editorClassName"
                                 onEditorStateChange={onEditorStateChange}
                             />
-                            <textarea
+                            {/* <textarea
                                 disabled
                                 value={draftToHtml(convertToRaw(editorState.getCurrentContent()))}
                                 onChange={(e) => {
@@ -135,7 +135,7 @@ const Panel = () => {
                             //     setProduct({ ...product, description: draftToHtml(convertToRaw(editorState.getCurrentContent())) })
                             // }
 
-                            ></textarea>
+                            ></textarea> */}
                             {/*  */}
                         </div>
                     </div>
@@ -147,14 +147,31 @@ const Panel = () => {
                             </h>
 
 
-                            <input name="file-upload-field" type="file" class="file-upload-field" value=""
+                            {/* <input name="file-upload-field" type="file" class="file-upload-field" value=""
                                 multiple={false}
                                 onDone={({ base64 }) => setProduct({ ...product, file: base64 })
                                     // console.log(postData.selectedFiles)
                                 }
                             >
-                            </input>
+                            </input> */}
+
+
+                            {/* <div ><FileBase type="file" multiple={false} onDone={({ base64 }) => setProduct({ ...product, file: base64 })} /></div> */}
                             <VerticalAlignTopIcon />
+                            <FileBase
+                                type="file"
+                                multiple={false}
+                                onDone={({ base64 }) => setProduct({ ...product, file: base64 })
+                                    // console.log(postData.selectedFiles)
+                                }
+                            />
+
+
+
+
+
+
+
                         </div>
 
                     </div>

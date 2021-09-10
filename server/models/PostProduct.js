@@ -5,6 +5,8 @@ const postSchema = mongoose.Schema({
     description: String,
 
     file: String,
+    file1: String,
+    file2: String,
     tags: String,
     meta: String,
     detail: String,

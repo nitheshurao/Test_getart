@@ -4,8 +4,9 @@ import Carts from './Carts'
 
 import './PageDetails.css'
 const PageDetails = (props) => {
+    console.log(props)
     console.log(props.sidecart)
-
+    const { _id, title, file, file1, file2, description, detail } = props.location.state.post
     return (
         <div className="det">
 
@@ -23,7 +24,13 @@ const PageDetails = (props) => {
 
                         <div class="asides">
                             <div className="de-img co-s-i co-i ">
-                                <img className="co-s-i " src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" />
+                                <img className="co-s-i "
+                                    src={file || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} />
+
+
+
+
+
 
                                 {/* <div className="cart">
 
@@ -40,19 +47,16 @@ const PageDetails = (props) => {
                         {props.sidecart ? <Carts />
                             :
                             <div class="asidse">
-                                <h>stock</h>
-                                <h3>Heading</h3>
+                                <h>stock {title}</h>
+                                <h3>{detail}</h3>
                                 <h>price </h>
-                                <p>wkjbfwlkj lkjqwnflwj jwenfdje jhefdjwqpi jqwediwj jfikjenf wefn wef qwnrf; wklqfn onfwo wknfwreoinf qwnfow wnfopij
-                                    wkjbfwlkj lkjqwnflwj jwenfdje jhefdjwqpi jqwediwj jfikjenf wefn wef qwnrf; wklqfn onfwo wknfwreoinf qwnfow wnfopij
-
-                                    wkjbfwlkj lkjqwnflwj jwenfdje jhefdjwqpi jqwediwj jfikjenf
+                                <p>{description}
 
                                 </p>
                                 <div className="de-img-op">
-                                    <img src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" />
-                                    <img src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" />
-                                    <img src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" />
+                                    <img src={file1 || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} />
+                                    <img src={file2 || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} />
+                                    <img src={file || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} />
 
                                 </div>
                                 <div className="de-btn-op">
